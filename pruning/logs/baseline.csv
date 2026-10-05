@@ -1,0 +1,2 @@
+strategy,ratio,accuracy,loss,params,size_mb,inference_ms,prune_time_s
+baseline,0.0,98.91,,44470,0.16963958740234375,0.8015746000523905,0.0
