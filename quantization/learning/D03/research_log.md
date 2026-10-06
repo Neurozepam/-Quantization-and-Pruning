@@ -58,7 +58,7 @@
 
 - A: порог $\alpha=1$, шаг $s=1/7$.
 - B: порог $\alpha=0.7$, шаг $s=0.1$.
-- Восстановление: $\hat W=s\cdot\operatorname{clip}(\operatorname{round}(W/s),-7,7)$.
+- Восстановление: $\hat W = s \cdot \text{clip}(\text{round}(W/s), -7, 7)$.
 
 | Квантователь | Восстановленные веса | Ошибка $W-\hat W$ | Weight MSE |
 |---|---|---|---:|
