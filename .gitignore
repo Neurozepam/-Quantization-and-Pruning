@@ -220,3 +220,30 @@ __marimo__/
 .streamlit/secrets.toml
 
 .vscode/
+
+# Data & datasets
+data/
+datasets/
+dataset/
+*.csv.gz
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.idx
+*.idx3-ubyte
+*.idx1-ubyte
+
+**/MNIST/
+**/CIFAR*/
+**/raw/
+
+# Model checkpoints & weights
+*.pth
+*.pt
+*.ckpt
+*.safetensors
