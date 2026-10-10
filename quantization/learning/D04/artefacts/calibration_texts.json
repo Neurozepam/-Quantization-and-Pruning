@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "source": "Assistant-authored synthetic teaching corpus; fictional prose and illustrative code",
+    "target_domain": "short English narrative prose",
+    "sequence_length": 32,
+    "calibration_texts_per_full_group": 8,
+    "tiny_selection": "representative[0] only",
+    "evaluation_use": "held out from calibration; not evidence of independence from model pretraining",
+    "limitation": "Results apply to this small controlled corpus, not a general domain benchmark"
+  },
+  "representative": [
+    "The traveler reached a quiet village before sunset. A woman standing beside the old bridge pointed toward a small inn near the river. He thanked her, carried his bag through the narrow street, and hoped to find a warm meal before the evening rain began.",
+    "Mira opened the shop early that morning and found a handwritten letter beneath the door. The paper smelled faintly of smoke, but the message was friendly. Someone had returned a book her grandfather lost many years ago, and wanted to tell her where it had been found.",
+    "The children followed a winding path through the forest until they heard water beyond the trees. Their teacher asked them to walk carefully over the slippery stones. On the other side of the stream they discovered a meadow full of flowers and sat down to eat their lunch.",
+    "A baker watched the first customers arrive while fresh bread cooled beside the window. One customer asked for directions to the station, and another brought news from the neighboring town. By noon the street was busy, but the baker still remembered the unusual visitor who had arrived at dawn.",
+    "Jonas repaired the wooden fence behind his house while his sister gathered fallen apples. They planned to carry the fruit to their neighbor, who had been ill all week. When the work was finished, they rested under a tree and listened to distant thunder moving across the hills.",
+    "The captain looked across the harbor and noticed a small boat approaching through the fog. Its passengers waved, but the wind carried their voices away. She asked the crew to prepare a rope and a lantern, then waited by the railing while the boat moved slowly toward the dock.",
+    "Lena found a faded photograph inside a box of old clothes. It showed her parents standing beside a mountain lake before she was born. She placed the picture on the kitchen table, made some tea, and called her mother to ask about the journey and the people they had met.",
+    "The musician arrived at the theater with a broken instrument case and muddy shoes. A caretaker let him enter through the side door and showed him an empty room. He practiced quietly until the other performers arrived, then joined them on the stage for their final rehearsal before the concert."
+  ],
+  "unrelated": [
+    "def running_total(values):\n    total = 0\n    result = []\n    for index, value in enumerate(values):\n        total += value\n        result.append((index, total))\n    return result\n\nassert running_total([2, 3, 4])[-1][1] == 9\n",
+    "def count_words(lines):\n    counts = {}\n    for line in lines:\n        for word in line.lower().split():\n            counts[word] = counts.get(word, 0) + 1\n    return sorted(counts.items(), key=lambda item: item[1], reverse=True)\n",
+    "class Queue:\n    def __init__(self):\n        self.items = []\n    def push(self, value):\n        self.items.append(value)\n    def pop(self):\n        if not self.items:\n            raise IndexError('empty queue')\n        return self.items.pop(0)\n",
+    "def normalize_rows(matrix):\n    output = []\n    for row in matrix:\n        total = sum(abs(value) for value in row)\n        if total == 0:\n            output.append(list(row))\n        else:\n            output.append([value / total for value in row])\n    return output\n",
+    "def find_index(values, target):\n    left, right = 0, len(values)\n    while left < right:\n        middle = (left + right) // 2\n        if values[middle] < target:\n            left = middle + 1\n        else:\n            right = middle\n    return left\n",
+    "def read_records(path):\n    import json\n    records = []\n    with open(path, encoding='utf-8') as stream:\n        for line in stream:\n            if line.strip():\n                records.append(json.loads(line))\n    return records\n",
+    "def moving_average(values, window):\n    if window <= 0:\n        raise ValueError('window must be positive')\n    output = []\n    for end in range(window, len(values) + 1):\n        section = values[end - window:end]\n        output.append(sum(section) / window)\n    return output\n",
+    "def validate_config(config):\n    required = ('host', 'port', 'timeout')\n    for key in required:\n        if key not in config:\n            raise KeyError(key)\n    if not 0 < config['port'] < 65536:\n        raise ValueError('invalid port')\n    return dict(config)\n"
+  ],
+  "evaluation": [
+    "A young gardener arrived at the abandoned house carrying seeds and a pair of gloves. She cleared the weeds beside the front steps and discovered a stone path hidden beneath them. By the afternoon, a neighbor had stopped to help, and together they planned a garden for the coming spring.",
+    "The train stopped beside a tiny station surrounded by fields. Daniel stepped onto the platform and searched for the friend who had promised to meet him. An old man offered him a seat under the shelter, and they talked about the town while waiting for the rain to pass.",
+    "Nora carried a basket of vegetables toward the market when she heard someone calling from a nearby window. A child had dropped a toy into the street and could not reach it. She picked it up, handed it to his father, and continued walking as the morning bells began to ring.",
+    "The lighthouse keeper climbed the stairs with a fresh lamp and a notebook. Waves struck the rocks below, and a fishing boat moved across the dark water. He checked the light, wrote down the weather, and wondered whether the sailors would reach the harbor before the storm grew stronger.",
+    "Two friends returned to the school where they had first met. The classrooms were empty, but the walls still held drawings from the previous term. They walked through the courtyard, remembered their teachers, and decided to leave a letter for the students who would arrive there the following week.",
+    "An artist set up her easel beside the lake and watched the clouds change color. A passing cyclist stopped to admire the unfinished painting. They spoke about the surrounding mountains, and when he left, she added a small figure to the path at the edge of the picture.",
+    "The family prepared dinner while snow gathered against the windows. Their youngest daughter arranged plates around the table, and her brother brought wood for the fire. Just before they began to eat, someone knocked at the door, bringing a parcel and a story about the road through the valley.",
+    "A librarian noticed that one reader returned every Thursday to study the same old map. This time she asked what he was looking for. He described a vanished footpath near his childhood home, and together they searched the shelves for a book that might explain where the path once led."
+  ]
+}

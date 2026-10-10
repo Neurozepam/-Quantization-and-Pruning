@@ -1,0 +1,8 @@
+model.layers.0.self_attn.q_proj torch.Size([576, 576])
+model.layers.0.self_attn.k_proj torch.Size([192, 576])
+model.layers.0.self_attn.v_proj torch.Size([192, 576])
+model.layers.0.self_attn.o_proj torch.Size([576, 576])
+model.layers.0.mlp.gate_proj torch.Size([1536, 576])
+model.layers.0.mlp.up_proj torch.Size([1536, 576])
+model.layers.0.mlp.down_proj torch.Size([576, 1536])
+lm_head torch.Size([49152, 576])
