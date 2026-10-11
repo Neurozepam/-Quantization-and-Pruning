@@ -1,0 +1,26 @@
+{
+  "repo": "Salesforce/wikitext",
+  "config": "wikitext-2-raw-v1",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "datasets_version": "5.0.1",
+  "torch_version": "2.5.1+cu121",
+  "transformers_version": "4.40.2",
+  "test_downloaded_by_this_script": false,
+  "splits": {
+    "train": {
+      "rows": 36718,
+      "blank_rows": 12951,
+      "unique_nonempty_stripped_rows": 21713,
+      "parquet_sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+      "datasets_fingerprint": "9f44acd9608a1e68"
+    },
+    "validation": {
+      "rows": 3760,
+      "blank_rows": 1299,
+      "unique_nonempty_stripped_rows": 2361,
+      "parquet_sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c",
+      "datasets_fingerprint": "f1458ab96485fa59"
+    }
+  },
+  "exact_nonempty_stripped_row_overlap_train_validation": 147
+}

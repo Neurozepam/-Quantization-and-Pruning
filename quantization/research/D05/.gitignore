@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.py[codz]
+
+# Keep the reproducibility manifest, not generated activation tensors.
+# Re-include data/ because the repository-level .gitignore excludes it.
+!data/
+data/*
+!data/wikitext_blocks.json
+
+# Generated tensors and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors

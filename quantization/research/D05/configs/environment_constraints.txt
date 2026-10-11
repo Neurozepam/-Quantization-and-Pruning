@@ -1,0 +1,6 @@
+# Preserve the working D04 model environment during dataset installation.
+torch==2.5.1+cu121
+transformers==4.40.2
+tokenizers==0.19.1
+huggingface-hub==0.36.2
+numpy==2.4.6
