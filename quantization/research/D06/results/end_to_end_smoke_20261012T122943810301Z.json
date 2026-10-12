@@ -1,0 +1,33 @@
+{
+  "run_id": "20261012T122943810301Z",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "python": "3.11.16",
+  "torch": "2.5.1+cu121",
+  "threads": 6,
+  "dtype": "float32",
+  "attention": "eager",
+  "use_cache": false,
+  "calibration_subset": 0,
+  "calibration_tokens": 256,
+  "scope": "diagnostic fake quantization; NOT actual low-bit execution",
+  "test_accessed": false,
+  "thresholds": {
+    "max_abs": {
+      "model.layers.0.mlp.down_proj": 7.128355026245117,
+      "model.layers.15.mlp.down_proj": 4.742916584014893,
+      "model.layers.29.mlp.down_proj": 466.6864929199219
+    },
+    "p999": {
+      "model.layers.0.mlp.down_proj": 1.8755500316619873,
+      "model.layers.15.mlp.down_proj": 1.4053982496261597,
+      "model.layers.29.mlp.down_proj": 36.68292999267578
+    }
+  },
+  "manifest_sha256": "ee5d038f8c1c37a45624ce2df92e2090277c28c9ab5fb823b755e395210d59b4",
+  "gpu": "NVIDIA GeForce GTX 1050 Ti",
+  "status": "ok",
+  "state_sha256_before": "426b35063ab81a53570e5738f584645caf576e48a3bcfb26c8a077efc3f53adc",
+  "state_sha256_after": "426b35063ab81a53570e5738f584645caf576e48a3bcfb26c8a077efc3f53adc",
+  "original_state_unchanged": true
+}

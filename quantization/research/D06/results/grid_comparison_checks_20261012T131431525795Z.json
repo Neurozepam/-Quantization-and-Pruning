@@ -1,0 +1,17 @@
+{
+  "coarse_run": "20261012T130236631032Z",
+  "refined_run": "20261012T131431525795Z",
+  "original_candidate_count": 2472,
+  "refined_candidate_count": 4872,
+  "old_candidates_preserved": true,
+  "original_candidate_losses_match": true,
+  "fixed_baselines_unchanged": true,
+  "selected_calibration_objectives_nonincreasing": true,
+  "coarse_shared_search_seconds_total": 7.89610299999913,
+  "refined_shared_search_seconds_total": 16.589049299996987,
+  "comparison_tolerance": {
+    "relative": 1e-06,
+    "absolute": 1e-06
+  },
+  "independent_subsets": false
+}

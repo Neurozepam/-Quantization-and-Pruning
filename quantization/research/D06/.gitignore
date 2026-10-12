@@ -1,0 +1,17 @@
+# Downloaded papers, extracted text and external reference code
+/sources/
+
+# Local caches and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Large local tensors/checkpoints; CSV and JSON results remain tracked
+*.pt
+*.pth
+*.safetensors

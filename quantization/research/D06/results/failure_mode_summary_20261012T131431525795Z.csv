@@ -1,0 +1,4 @@
+run_id,layer,subsets,worse_count,better_count,exact_tie_count,dev_relative_percent_mean,dev_relative_percent_median,dev_relative_percent_min,dev_relative_percent_max,independent_subsets
+20261012T131431525795Z,model.layers.0.mlp.down_proj,8,3,4,1,0.2872571423042485,-0.12541076929835368,-0.3583358779657464,2.839447347244851,False
+20261012T131431525795Z,model.layers.15.mlp.down_proj,8,0,8,0,-18.107552507352896,-18.94442468262499,-24.16087044147002,-13.024075006770559,False
+20261012T131431525795Z,model.layers.29.mlp.down_proj,8,0,8,0,-6.3902615474953945,-6.4446537062735825,-8.57009263798213,-3.948432192011698,False
