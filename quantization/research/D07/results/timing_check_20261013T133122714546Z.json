@@ -1,0 +1,116 @@
+{
+  "run_id": "20261013T133122714546Z",
+  "status": "ok",
+  "protocol_sha256": "053e50ed08a3451788b3f78bbaa95f15c840ed89efd3315a800b63b259f176c8",
+  "scope": "calibration-only timing gate; NOT a quality experiment",
+  "development_evaluated": false,
+  "test_accessed": false,
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "python": "3.11.16",
+  "torch": "2.5.1+cu121",
+  "threads": 6,
+  "calibration_subset": 0,
+  "calibration_tokens": 256,
+  "dtype": "float32",
+  "attention": "eager",
+  "use_cache": false,
+  "reference_cache": "two CPU logit tensors; copied to GPU inside measured calls",
+  "candidate_csv_sha256": "b8a39d1fe55303472ae59684f3a76d052e00833bf67714eaac9a5b2df907f78d",
+  "controls_csv_sha256": "82155d7bf5bbaea17609c48f8f056f5f6c9ac835d68f11ccc45f753ed341a806",
+  "candidate_counts": {
+    "0:model.layers.0.mlp.down_proj": 203,
+    "0:model.layers.15.mlp.down_proj": 203,
+    "0:model.layers.29.mlp.down_proj": 203,
+    "1:model.layers.0.mlp.down_proj": 203,
+    "1:model.layers.15.mlp.down_proj": 203,
+    "1:model.layers.29.mlp.down_proj": 203,
+    "2:model.layers.0.mlp.down_proj": 203,
+    "2:model.layers.15.mlp.down_proj": 203,
+    "2:model.layers.29.mlp.down_proj": 203,
+    "3:model.layers.0.mlp.down_proj": 203,
+    "3:model.layers.15.mlp.down_proj": 203,
+    "3:model.layers.29.mlp.down_proj": 203,
+    "4:model.layers.0.mlp.down_proj": 203,
+    "4:model.layers.15.mlp.down_proj": 203,
+    "4:model.layers.29.mlp.down_proj": 203,
+    "5:model.layers.0.mlp.down_proj": 203,
+    "5:model.layers.15.mlp.down_proj": 203,
+    "5:model.layers.29.mlp.down_proj": 203,
+    "6:model.layers.0.mlp.down_proj": 203,
+    "6:model.layers.15.mlp.down_proj": 203,
+    "6:model.layers.29.mlp.down_proj": 203,
+    "7:model.layers.0.mlp.down_proj": 203,
+    "7:model.layers.15.mlp.down_proj": 203,
+    "7:model.layers.29.mlp.down_proj": 203
+  },
+  "timing_alphas": {
+    "model.layers.0.mlp.down_proj": 1.8755500316619873,
+    "model.layers.15.mlp.down_proj": 1.4053982496261597,
+    "model.layers.29.mlp.down_proj": 36.68292999267578
+  },
+  "preparation_read_seconds": 0.02950349999991886,
+  "historical_local_search_and_threshold_seconds": 18.335659799993664,
+  "preparation_estimate_seconds": 18.365163299993583,
+  "preparation_cost_note": "D06 measured shared CPU search + threshold time, charged once per pair; cached results reused",
+  "gpu": "NVIDIA GeForce GTX 1050 Ti",
+  "device_capacity_bytes": 4294836224,
+  "model_load_seconds": 2.576408100001572,
+  "reports": {
+    "fp_reference": {
+      "seconds": [
+        0.4099354999998468,
+        0.33757360000163317,
+        0.3096009000000777
+      ],
+      "peak_allocated_bytes": 728836096,
+      "peak_reserved_bytes": 765460480
+    },
+    "model.layers.0.mlp.down_proj": {
+      "seconds": [
+        0.2809722999991209,
+        0.36584640000000945,
+        0.35011559999838937
+      ],
+      "peak_allocated_bytes": 778872832,
+      "peak_reserved_bytes": 815792128
+    },
+    "model.layers.15.mlp.down_proj": {
+      "seconds": [
+        0.35244630000124744,
+        0.2969740999997157,
+        0.2761261000014201
+      ],
+      "peak_allocated_bytes": 778872832,
+      "peak_reserved_bytes": 815792128
+    },
+    "model.layers.29.mlp.down_proj": {
+      "seconds": [
+        0.28127869999843824,
+        0.2798402000007627,
+        0.27755810000053316
+      ],
+      "peak_allocated_bytes": 778872832,
+      "peak_reserved_bytes": 815792128
+    }
+  },
+  "block_pass_counts": {
+    "calibration_quantized": 9744,
+    "development_quantized": 768,
+    "fp_calibration_reference": 16,
+    "fp_development_reference": 16,
+    "fp_development_after_check": 16
+  },
+  "seconds_per_block_conservative": 0.2049677499999234,
+  "safety_factor": 1.5,
+  "predicted_pilot_seconds": 3265.05432329878,
+  "predicted_pilot_minutes": 54.41757205497967,
+  "time_gate_passed": true,
+  "memory_gate_passed": true,
+  "timing_compute_seconds": 5.925364199998512,
+  "gate_decision": "GO",
+  "candidate_quality_results_recorded": false,
+  "state_sha256_before": "426b35063ab81a53570e5738f584645caf576e48a3bcfb26c8a077efc3f53adc",
+  "state_sha256_after": "426b35063ab81a53570e5738f584645caf576e48a3bcfb26c8a077efc3f53adc",
+  "original_state_unchanged": true
+}

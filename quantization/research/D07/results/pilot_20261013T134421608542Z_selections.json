@@ -1,0 +1,242 @@
+[
+  {
+    "subset_id": 0,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 2.2387211322784424,
+    "downstream_alpha": 2.9853826620046853,
+    "local_cal_logit_mse": 3.2518169573285762,
+    "downstream_cal_logit_mse": 1.762918226987984,
+    "local_cal_output_mse": 0.3629993200302124,
+    "downstream_cal_output_mse": 0.3846990168094635
+  },
+  {
+    "subset_id": 0,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0,
+    "downstream_alpha": 1.0,
+    "local_cal_logit_mse": 0.06243999361053226,
+    "downstream_cal_logit_mse": 0.06243999361053226,
+    "local_cal_output_mse": 0.13534015417099,
+    "downstream_cal_output_mse": 0.13534015417099
+  },
+  {
+    "subset_id": 0,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 53.08844441308747,
+    "downstream_alpha": 29.853826422429304,
+    "local_cal_logit_mse": 2.992010241731258,
+    "downstream_cal_logit_mse": 2.988852433332308,
+    "local_cal_output_mse": 85.109130859375,
+    "downstream_cal_output_mse": 97.60909271240234
+  },
+  {
+    "subset_id": 1,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 1.778279423713684,
+    "downstream_alpha": 2.818382978439331,
+    "local_cal_logit_mse": 7.828777964033793,
+    "downstream_cal_logit_mse": 3.7282154153338256,
+    "local_cal_output_mse": 0.35195350646972656,
+    "downstream_cal_output_mse": 0.38408076763153076
+  },
+  {
+    "subset_id": 1,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0,
+    "downstream_alpha": 1.0,
+    "local_cal_logit_mse": 0.08799388715288457,
+    "downstream_cal_logit_mse": 0.08799388715288457,
+    "local_cal_output_mse": 0.165578693151474,
+    "downstream_cal_output_mse": 0.165578693151474
+  },
+  {
+    "subset_id": 1,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 53.08844441308747,
+    "downstream_alpha": 33.496543414418326,
+    "local_cal_logit_mse": 2.6504758499425853,
+    "downstream_cal_logit_mse": 2.608064986902272,
+    "local_cal_output_mse": 79.73479461669922,
+    "downstream_cal_output_mse": 91.21818542480469
+  },
+  {
+    "subset_id": 2,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 1.9952622652053833,
+    "downstream_alpha": 2.5118863582611084,
+    "local_cal_logit_mse": 5.29743392824188,
+    "downstream_cal_logit_mse": 3.4097978887282645,
+    "local_cal_output_mse": 0.34917914867401123,
+    "downstream_cal_output_mse": 0.36166614294052124
+  },
+  {
+    "subset_id": 2,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0592537261954973,
+    "downstream_alpha": 1.4962356881859034,
+    "local_cal_logit_mse": 0.19825256027261728,
+    "downstream_cal_logit_mse": 0.15043474432677423,
+    "local_cal_output_mse": 0.18044331669807434,
+    "downstream_cal_output_mse": 0.2106361985206604
+  },
+  {
+    "subset_id": 2,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 53.08844441308747,
+    "downstream_alpha": 28.18383026123047,
+    "local_cal_logit_mse": 3.1017283842632466,
+    "downstream_cal_logit_mse": 2.569963029676222,
+    "local_cal_output_mse": 86.33348083496094,
+    "downstream_cal_output_mse": 107.281005859375
+  },
+  {
+    "subset_id": 3,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 2.113489010511539,
+    "downstream_alpha": 2.2387211322784424,
+    "local_cal_logit_mse": 3.8090596036335302,
+    "downstream_cal_logit_mse": 3.0566407851972603,
+    "local_cal_output_mse": 0.3666830062866211,
+    "downstream_cal_output_mse": 0.3672245442867279
+  },
+  {
+    "subset_id": 3,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0,
+    "downstream_alpha": 1.0592537261954973,
+    "local_cal_logit_mse": 0.07729541473188425,
+    "downstream_cal_logit_mse": 0.0717217352759494,
+    "local_cal_output_mse": 0.14524467289447784,
+    "downstream_cal_output_mse": 0.14710944890975952
+  },
+  {
+    "subset_id": 3,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 50.11872482299805,
+    "downstream_alpha": 70.7945785522461,
+    "local_cal_logit_mse": 3.0466005820927657,
+    "downstream_cal_logit_mse": 2.8564493174315126,
+    "local_cal_output_mse": 86.59791564941406,
+    "downstream_cal_output_mse": 93.2088623046875
+  },
+  {
+    "subset_id": 4,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 2.5118863582611084,
+    "downstream_alpha": 2.818382978439331,
+    "local_cal_logit_mse": 3.4000891337557415,
+    "downstream_cal_logit_mse": 2.6971904924848262,
+    "local_cal_output_mse": 0.3866553008556366,
+    "downstream_cal_output_mse": 0.3934957981109619
+  },
+  {
+    "subset_id": 4,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0,
+    "downstream_alpha": 1.1220184564590454,
+    "local_cal_logit_mse": 0.08161742543298116,
+    "downstream_cal_logit_mse": 0.0744156299300707,
+    "local_cal_output_mse": 0.1505005657672882,
+    "downstream_cal_output_mse": 0.15214616060256958
+  },
+  {
+    "subset_id": 4,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 63.095733642578125,
+    "downstream_alpha": 63.095733642578125,
+    "local_cal_logit_mse": 2.2533997062623032,
+    "downstream_cal_logit_mse": 2.2533997062623032,
+    "local_cal_output_mse": 85.49441528320312,
+    "downstream_cal_output_mse": 85.49441528320312
+  },
+  {
+    "subset_id": 5,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 1.8983159065246582,
+    "downstream_alpha": 2.2387211322784424,
+    "local_cal_logit_mse": 4.950602373738927,
+    "downstream_cal_logit_mse": 3.4403608026779855,
+    "local_cal_output_mse": 0.34846949577331543,
+    "downstream_cal_output_mse": 0.3503507971763611
+  },
+  {
+    "subset_id": 5,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0592537261954973,
+    "downstream_alpha": 1.6788040426708,
+    "local_cal_logit_mse": 0.2555065255152585,
+    "downstream_cal_logit_mse": 0.1990318198216556,
+    "local_cal_output_mse": 0.19557252526283264,
+    "downstream_cal_output_mse": 0.24672776460647583
+  },
+  {
+    "subset_id": 5,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 53.08844441308747,
+    "downstream_alpha": 35.48133850097656,
+    "local_cal_logit_mse": 2.360735955826567,
+    "downstream_cal_logit_mse": 2.163964859769726,
+    "local_cal_output_mse": 80.03590393066406,
+    "downstream_cal_output_mse": 87.62442016601562
+  },
+  {
+    "subset_id": 6,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 2.113489010511539,
+    "downstream_alpha": 3.349654391950986,
+    "local_cal_logit_mse": 6.205846110666831,
+    "downstream_cal_logit_mse": 3.096634351675279,
+    "local_cal_output_mse": 0.35119229555130005,
+    "downstream_cal_output_mse": 0.41961848735809326
+  },
+  {
+    "subset_id": 6,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0,
+    "downstream_alpha": 1.3335214602336094,
+    "local_cal_logit_mse": 0.10635282110980177,
+    "downstream_cal_logit_mse": 0.09597413621236646,
+    "local_cal_output_mse": 0.16254395246505737,
+    "downstream_cal_output_mse": 0.18000569939613342
+  },
+  {
+    "subset_id": 6,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 50.11872482299805,
+    "downstream_alpha": 39.69207000732422,
+    "local_cal_logit_mse": 1.836445966104823,
+    "downstream_cal_logit_mse": 1.7609475603879594,
+    "local_cal_output_mse": 76.64024353027344,
+    "downstream_cal_output_mse": 80.6710205078125
+  },
+  {
+    "subset_id": 7,
+    "layer": "model.layers.0.mlp.down_proj",
+    "local_alpha": 2.113489010511539,
+    "downstream_alpha": 2.9853826620046853,
+    "local_cal_logit_mse": 3.836341998082759,
+    "downstream_cal_logit_mse": 2.9464552671577673,
+    "local_cal_output_mse": 0.37407320737838745,
+    "downstream_cal_output_mse": 0.4057847559452057
+  },
+  {
+    "subset_id": 7,
+    "layer": "model.layers.15.mlp.down_proj",
+    "local_alpha": 1.0592537261954973,
+    "downstream_alpha": 1.8836490732424362,
+    "local_cal_logit_mse": 0.1561173516621427,
+    "downstream_cal_logit_mse": 0.12529080808944904,
+    "local_cal_output_mse": 0.14864979684352875,
+    "downstream_cal_output_mse": 0.2629307806491852
+  },
+  {
+    "subset_id": 7,
+    "layer": "model.layers.29.mlp.down_proj",
+    "local_alpha": 50.11872482299805,
+    "downstream_alpha": 37.58374090423002,
+    "local_cal_logit_mse": 2.221038177570333,
+    "downstream_cal_logit_mse": 2.0770441490834153,
+    "local_cal_output_mse": 75.8624038696289,
+    "downstream_cal_output_mse": 77.83358764648438
+  }
+]
