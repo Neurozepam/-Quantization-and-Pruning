@@ -1,0 +1,286 @@
+{
+  "run_id": "20261014T144533848026Z",
+  "wall_seconds": 40.68699999999808,
+  "sites": [
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "pairs": 8,
+      "methods": {
+        "RTN": {
+          "weight_mse_mean": 0.0004167155420873314,
+          "mean_occupied_codes": 14.953993055555555,
+          "mean_code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "calibration": {
+            "output_mse": 0.018012149492278695,
+            "normalized_output_mse": 0.004578262986763474,
+            "diagonal_only_mse": 0.017882782965898514,
+            "net_cross_channel_mse": 0.0001293665263801813,
+            "output_mse_sample_std": 0.0004536795670420356
+          },
+          "development": {
+            "output_mse": 0.01842735894024372,
+            "normalized_output_mse": 0.004576873426087972,
+            "diagonal_only_mse": 0.01825761960612403,
+            "net_cross_channel_mse": 0.00016973933411969233,
+            "output_mse_sample_std": 0.0
+          }
+        },
+        "GPTQ": {
+          "weight_mse_mean": 0.0011351761349942535,
+          "mean_occupied_codes": 14.933684172453704,
+          "mean_code_histogram": [
+            10399.875,
+            11833.375,
+            21430.375,
+            36955.125,
+            57956.875,
+            82043.375,
+            104440.875,
+            117530.875,
+            117505.875,
+            104134,
+            82024.25,
+            57931.25,
+            36811.25,
+            21510.75,
+            11865.875,
+            10362
+          ],
+          "calibration": {
+            "output_mse": 0.0015216997562674806,
+            "normalized_output_mse": 0.00038619647579786254,
+            "diagonal_only_mse": 0.03998151421546936,
+            "net_cross_channel_mse": -0.03845981445920188,
+            "output_mse_sample_std": 0.00018999617943948823
+          },
+          "development": {
+            "output_mse": 0.028386970981955528,
+            "normalized_output_mse": 0.007050580257092679,
+            "diagonal_only_mse": 0.04374065457118882,
+            "net_cross_channel_mse": -0.015353683589233294,
+            "output_mse_sample_std": 0.001652013643230281
+          }
+        }
+      },
+      "calibration_delta_percent": {
+        "mean": -91.55899002625019,
+        "min": -93.14687271294679,
+        "max": -90.02027467036633,
+        "wins": 8,
+        "losses": 0
+      },
+      "development_delta_percent": {
+        "mean": 54.04796245630672,
+        "min": 44.77413732158928,
+        "max": 72.41493147808985,
+        "wins": 0,
+        "losses": 8
+      }
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "pairs": 8,
+      "methods": {
+        "RTN": {
+          "weight_mse_mean": 0.00041421089554205537,
+          "mean_occupied_codes": 14.558738425925926,
+          "mean_code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "calibration": {
+            "output_mse": 0.021810370730236173,
+            "normalized_output_mse": 0.01159770366175746,
+            "diagonal_only_mse": 0.02170695819788509,
+            "net_cross_channel_mse": 0.0001034125323510827,
+            "output_mse_sample_std": 0.0016884336260378297
+          },
+          "development": {
+            "output_mse": 0.022237109020352364,
+            "normalized_output_mse": 0.011464689792158759,
+            "diagonal_only_mse": 0.022111968861685857,
+            "net_cross_channel_mse": 0.0001251401586665063,
+            "output_mse_sample_std": 0.0
+          }
+        },
+        "GPTQ": {
+          "weight_mse_mean": 0.0009111522595048882,
+          "mean_occupied_codes": 14.540418836805555,
+          "mean_code_histogram": [
+            10037.125,
+            10805.375,
+            19697.375,
+            35343.625,
+            57264.875,
+            82704.875,
+            106404.75,
+            121494.875,
+            121881,
+            106071.125,
+            81974.25,
+            56352.625,
+            34574.375,
+            19687.625,
+            10568,
+            9874.125
+          ],
+          "calibration": {
+            "output_mse": 0.0011843373940791935,
+            "normalized_output_mse": 0.0006313292586809748,
+            "diagonal_only_mse": 0.04193488218718105,
+            "net_cross_channel_mse": -0.040750544793101855,
+            "output_mse_sample_std": 0.0001261936813671077
+          },
+          "development": {
+            "output_mse": 0.03483992209658027,
+            "normalized_output_mse": 0.01796226743569479,
+            "diagonal_only_mse": 0.04437633727987607,
+            "net_cross_channel_mse": -0.009536415183295805,
+            "output_mse_sample_std": 0.0009332373546265781
+          }
+        }
+      },
+      "calibration_delta_percent": {
+        "mean": -94.5529424971896,
+        "min": -95.0924244284769,
+        "max": -93.17597513672557,
+        "wins": 8,
+        "losses": 0
+      },
+      "development_delta_percent": {
+        "mean": 56.67469213148734,
+        "min": 51.317795926223965,
+        "max": 62.877899547655105,
+        "wins": 0,
+        "losses": 8
+      }
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "pairs": 8,
+      "methods": {
+        "RTN": {
+          "weight_mse_mean": 0.0003840262070298195,
+          "mean_occupied_codes": 14.902199074074074,
+          "mean_code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "calibration": {
+            "output_mse": 7.306775391101837,
+            "normalized_output_mse": 0.008459936160618858,
+            "diagonal_only_mse": 7.71205997467041,
+            "net_cross_channel_mse": -0.4052845835685728,
+            "output_mse_sample_std": 0.35001184930632195
+          },
+          "development": {
+            "output_mse": 7.024668216705322,
+            "normalized_output_mse": 0.008610918884447217,
+            "diagonal_only_mse": 7.313834296332465,
+            "net_cross_channel_mse": -0.2891660796271429,
+            "output_mse_sample_std": 0.0
+          }
+        },
+        "GPTQ": {
+          "weight_mse_mean": 0.0010632328485371545,
+          "mean_occupied_codes": 14.888527199074074,
+          "mean_code_histogram": [
+            10284.375,
+            11390.625,
+            20771.375,
+            35854.625,
+            56555.125,
+            81553.375,
+            105962,
+            121318.625,
+            121011.875,
+            104616.125,
+            80600.25,
+            56423.75,
+            35734.875,
+            20841.875,
+            11527.75,
+            10289.375
+          ],
+          "calibration": {
+            "output_mse": 0.4118085019290447,
+            "normalized_output_mse": 0.00047795004025393163,
+            "diagonal_only_mse": 13.124737527635363,
+            "net_cross_channel_mse": -12.712929025706318,
+            "output_mse_sample_std": 0.04880551866896995
+          },
+          "development": {
+            "output_mse": 4.18197762966156,
+            "normalized_output_mse": 0.0051263161525482125,
+            "diagonal_only_mse": 12.838839319017199,
+            "net_cross_channel_mse": -8.656861689355638,
+            "output_mse_sample_std": 0.4845487513384209
+          }
+        }
+      },
+      "calibration_delta_percent": {
+        "mean": -94.34895697373551,
+        "min": -95.63196475950745,
+        "max": -93.20859299054536,
+        "wins": 8,
+        "losses": 0
+      },
+      "development_delta_percent": {
+        "mean": -40.46725766041984,
+        "min": -50.19749118182935,
+        "max": -31.609008731249823,
+        "wins": 8,
+        "losses": 0
+      }
+    }
+  ],
+  "max_peak_allocated_MiB": 70.0830078125,
+  "max_peak_reserved_MiB": 88.0,
+  "quant_seconds_sum": 36.22860240000227,
+  "h_seconds_sum": 0.09032390000356827
+}

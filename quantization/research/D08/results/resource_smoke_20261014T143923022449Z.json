@@ -1,0 +1,170 @@
+{
+  "run_id": "20261014T143923022449Z",
+  "protocol": "resource_protocol.md",
+  "torch": "2.5.1+cu121",
+  "transformers": "4.40.2",
+  "cpu_threads": 4,
+  "device": "cuda",
+  "dtype": "float32",
+  "corpus_access": false,
+  "test_access": false,
+  "development_access": false,
+  "models": [
+    {
+      "repo": "EleutherAI/pythia-160m",
+      "revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+      "checkpoint_file": "model.safetensors",
+      "resources_before": {
+        "free_gpu_MiB": 2931.0,
+        "free_ram_GiB": 5.157161712646484,
+        "process_rss_MiB": 381.32421875
+      },
+      "download_or_cache_seconds": 10.158397199997125,
+      "checkpoint_bytes": 374998696,
+      "checkpoint_sha256": "29d2e457a664e41c12c735f20a36dc0956a665f614a54ce5db21a32e75965270",
+      "state_dict_missing": [],
+      "state_dict_unexpected": [
+        "gpt_neox.layers.0.attention.masked_bias",
+        "gpt_neox.layers.0.attention.bias",
+        "gpt_neox.layers.0.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.1.attention.masked_bias",
+        "gpt_neox.layers.1.attention.bias",
+        "gpt_neox.layers.1.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.2.attention.masked_bias",
+        "gpt_neox.layers.2.attention.bias",
+        "gpt_neox.layers.2.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.3.attention.masked_bias",
+        "gpt_neox.layers.3.attention.bias",
+        "gpt_neox.layers.3.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.4.attention.masked_bias",
+        "gpt_neox.layers.4.attention.bias",
+        "gpt_neox.layers.4.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.5.attention.masked_bias",
+        "gpt_neox.layers.5.attention.bias",
+        "gpt_neox.layers.5.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.6.attention.masked_bias",
+        "gpt_neox.layers.6.attention.bias",
+        "gpt_neox.layers.6.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.7.attention.masked_bias",
+        "gpt_neox.layers.7.attention.bias",
+        "gpt_neox.layers.7.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.8.attention.masked_bias",
+        "gpt_neox.layers.8.attention.bias",
+        "gpt_neox.layers.8.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.9.attention.masked_bias",
+        "gpt_neox.layers.9.attention.bias",
+        "gpt_neox.layers.9.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.10.attention.masked_bias",
+        "gpt_neox.layers.10.attention.bias",
+        "gpt_neox.layers.10.attention.rotary_emb.inv_freq",
+        "gpt_neox.layers.11.attention.masked_bias",
+        "gpt_neox.layers.11.attention.bias",
+        "gpt_neox.layers.11.attention.rotary_emb.inv_freq"
+      ],
+      "cpu_load_seconds": 2.252426499999274,
+      "unique_parameters": 162322944,
+      "resources_after_cpu_load": {
+        "free_gpu_MiB": 2931.0,
+        "free_ram_GiB": 4.179195404052734,
+        "process_rss_MiB": 1123.1015625
+      },
+      "cuda_transfer_seconds": 0.3104511999990791,
+      "tokenizer_class": "GPTNeoXTokenizerFast",
+      "timings": [
+        {
+          "sequence_length": 128,
+          "batch_size": 1,
+          "seconds": [
+            0.0723522000007506,
+            0.0780445000018517,
+            0.07790979999845149
+          ],
+          "peak_allocated_MiB": 751.1484375,
+          "peak_reserved_MiB": 798.0,
+          "resources": {
+            "free_gpu_MiB": 2073.0,
+            "free_ram_GiB": 3.8779029846191406,
+            "process_rss_MiB": 1453.63671875
+          }
+        },
+        {
+          "sequence_length": 256,
+          "batch_size": 1,
+          "seconds": [
+            0.14910169999711798,
+            0.14968899999803398,
+            0.14794260000053328
+          ],
+          "peak_allocated_MiB": 820.447265625,
+          "peak_reserved_MiB": 900.0,
+          "resources": {
+            "free_gpu_MiB": 1971.0,
+            "free_ram_GiB": 4.015766143798828,
+            "process_rss_MiB": 1453.70703125
+          }
+        }
+      ],
+      "status": "FP_SMOKE_PASS_FULL_CYCLE_PENDING"
+    },
+    {
+      "repo": "facebook/opt-125m",
+      "revision": "27dcfa74d334bc871f3234de431e71c6eeba5dd6",
+      "checkpoint_file": "pytorch_model.bin",
+      "resources_before": {
+        "free_gpu_MiB": 2851.0,
+        "free_ram_GiB": 4.021289825439453,
+        "process_rss_MiB": 1448.54296875
+      },
+      "download_or_cache_seconds": 7.128642799998488,
+      "checkpoint_bytes": 250540281,
+      "checkpoint_sha256": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9",
+      "state_dict_missing": [],
+      "state_dict_unexpected": [],
+      "cpu_load_seconds": 1.8950135000013688,
+      "unique_parameters": 125239296,
+      "resources_after_cpu_load": {
+        "free_gpu_MiB": 2840.0,
+        "free_ram_GiB": 3.8009109497070312,
+        "process_rss_MiB": 1564.58203125
+      },
+      "cuda_transfer_seconds": 0.18377980000150274,
+      "tokenizer_class": "GPT2TokenizerFast",
+      "timings": [
+        {
+          "sequence_length": 128,
+          "batch_size": 1,
+          "seconds": [
+            0.08011160000023665,
+            0.079358000002685,
+            0.07883940000101575
+          ],
+          "peak_allocated_MiB": 554.462890625,
+          "peak_reserved_MiB": 608.0,
+          "resources": {
+            "free_gpu_MiB": 2252.0,
+            "free_ram_GiB": 3.7421035766601562,
+            "process_rss_MiB": 1594.57421875
+          }
+        },
+        {
+          "sequence_length": 256,
+          "batch_size": 1,
+          "seconds": [
+            0.16250229999786825,
+            0.16497700000036275,
+            0.14975029999914113
+          ],
+          "peak_allocated_MiB": 623.41796875,
+          "peak_reserved_MiB": 712.0,
+          "resources": {
+            "free_gpu_MiB": 2143.0,
+            "free_ram_GiB": 3.762359619140625,
+            "process_rss_MiB": 1594.57421875
+          }
+        }
+      ],
+      "status": "FP_SMOKE_PASS_FULL_CYCLE_PENDING"
+    }
+  ],
+  "wall_seconds": 26.23400000000038
+}

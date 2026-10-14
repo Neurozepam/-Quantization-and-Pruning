@@ -1,0 +1,2171 @@
+{
+  "run_id": "20261014T144533848026Z",
+  "protocol": "diagnostic_protocol.md",
+  "torch": "2.5.1+cu121",
+  "seed": 8,
+  "cpu_threads": 4,
+  "test_access": false,
+  "scope": "cached FP-input restricted-site W-only; not full GPTQ/PPL",
+  "bits": 4,
+  "group_size": 128,
+  "parameters": {
+    "percdamp": 0.01,
+    "blocksize": 128,
+    "sym": false,
+    "mse": false,
+    "actorder": false,
+    "static_groups": false
+  },
+  "pairs": [
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 0,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.017653439193964005,
+          "fp_output_power": 3.7953011989593506,
+          "normalized_output_mse": 0.004651393464846604,
+          "diagonal_only_mse": 0.017489999532699585,
+          "net_cross_channel_mse": 0.00016343966126441956
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0010288262274116278,
+        "calibration": {
+          "output_mse": 0.0013859090395271778,
+          "fp_output_power": 3.7953011989593506,
+          "normalized_output_mse": 0.00036516444067922354,
+          "diagonal_only_mse": 0.036587138970692955,
+          "net_cross_channel_mse": -0.03520122993116578
+        },
+        "development": {
+          "output_mse": 0.02679906226694584,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.006656185312904045,
+          "diagonal_only_mse": 0.04067044456799825,
+          "net_cross_channel_mse": -0.013871382301052414
+        },
+        "codes": {
+          "code_histogram": [
+            10338,
+            11729,
+            21459,
+            36769,
+            57914,
+            82055,
+            104198,
+            117460,
+            117707,
+            104224,
+            81963,
+            58192,
+            36822,
+            21624,
+            11775,
+            10507
+          ],
+          "mean_occupied_codes_per_row_group": 14.939091435185185,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004925799999909941,
+        "quant_seconds": 1.5265085999999428
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 45.43083658298455,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 1,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.018143901601433754,
+          "fp_output_power": 3.949876070022583,
+          "normalized_output_mse": 0.004593536931230862,
+          "diagonal_only_mse": 0.017988342377874587,
+          "net_cross_channel_mse": 0.00015555922355916726
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.001204699045047164,
+        "calibration": {
+          "output_mse": 0.0016916310414671898,
+          "fp_output_power": 3.949876070022583,
+          "normalized_output_mse": 0.0004282744601294587,
+          "diagonal_only_mse": 0.04351584116617838,
+          "net_cross_channel_mse": -0.04182421012471119
+        },
+        "development": {
+          "output_mse": 0.02859456278383732,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.007102140624727972,
+          "diagonal_only_mse": 0.046168883641560875,
+          "net_cross_channel_mse": -0.017574320857723556
+        },
+        "codes": {
+          "code_histogram": [
+            10345,
+            11944,
+            21343,
+            37177,
+            58013,
+            82207,
+            104278,
+            117507,
+            117399,
+            104154,
+            82059,
+            57964,
+            36698,
+            21419,
+            11928,
+            10301
+          ],
+          "mean_occupied_codes_per_row_group": 14.939380787037036,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004569000000628876,
+        "quant_seconds": 1.5527072999975644
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 55.17450371788941,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 2,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.01791383884847164,
+          "fp_output_power": 3.8982276916503906,
+          "normalized_output_mse": 0.004595380328050429,
+          "diagonal_only_mse": 0.01788219975100623,
+          "net_cross_channel_mse": 3.1639097465410715e-05
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0012148102978244424,
+        "calibration": {
+          "output_mse": 0.0017877519130706787,
+          "fp_output_power": 3.8982276916503906,
+          "normalized_output_mse": 0.000458606334591451,
+          "diagonal_only_mse": 0.04255429903666178,
+          "net_cross_channel_mse": -0.0407665471235911
+        },
+        "development": {
+          "output_mse": 0.03177151829004288,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.007891213181428481,
+          "diagonal_only_mse": 0.04735103249549866,
+          "net_cross_channel_mse": -0.01557951420545578
+        },
+        "codes": {
+          "code_histogram": [
+            10465,
+            11812,
+            21478,
+            36950,
+            58017,
+            81698,
+            104687,
+            117543,
+            117624,
+            104334,
+            81811,
+            57734,
+            36888,
+            21537,
+            11838,
+            10320
+          ],
+          "mean_occupied_codes_per_row_group": 14.925636574074074,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.00447840000197175,
+        "quant_seconds": 1.500845599999593
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 72.41493147808985,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 3,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.018525224179029465,
+          "fp_output_power": 4.131690979003906,
+          "normalized_output_mse": 0.004483690642201814,
+          "diagonal_only_mse": 0.018398642539978027,
+          "net_cross_channel_mse": 0.00012658163905143738
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.001093470025807619,
+        "calibration": {
+          "output_mse": 0.0016611367464065552,
+          "fp_output_power": 4.131690979003906,
+          "normalized_output_mse": 0.00040204767366387896,
+          "diagonal_only_mse": 0.040338102314207286,
+          "net_cross_channel_mse": -0.03867696556780073
+        },
+        "development": {
+          "output_mse": 0.027678504586219788,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.006874615756133305,
+          "diagonal_only_mse": 0.04215303394529554,
+          "net_cross_channel_mse": -0.014474529359075755
+        },
+        "codes": {
+          "code_histogram": [
+            10411,
+            11847,
+            21383,
+            37145,
+            57897,
+            82288,
+            104596,
+            117753,
+            117333,
+            103949,
+            81909,
+            57703,
+            36987,
+            21463,
+            11764,
+            10308
+          ],
+          "mean_occupied_codes_per_row_group": 14.93822337962963,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.003754600002139341,
+        "quant_seconds": 1.5258533999985957
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 50.2033182073226,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 4,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.017673134803771973,
+          "fp_output_power": 3.7716755867004395,
+          "normalized_output_mse": 0.004685751570493075,
+          "diagonal_only_mse": 0.017500377363628812,
+          "net_cross_channel_mse": 0.00017275744014316058
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0011456020874902606,
+        "calibration": {
+          "output_mse": 0.0012111624237149954,
+          "fp_output_power": 3.7716755867004395,
+          "normalized_output_mse": 0.00032112051948098534,
+          "diagonal_only_mse": 0.03828710317611694,
+          "net_cross_channel_mse": -0.03707594075240195
+        },
+        "development": {
+          "output_mse": 0.027551988139748573,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.006843192383761012,
+          "diagonal_only_mse": 0.04325105084313287,
+          "net_cross_channel_mse": -0.015699062703384295
+        },
+        "codes": {
+          "code_histogram": [
+            10404,
+            11817,
+            21360,
+            36920,
+            57947,
+            81973,
+            104279,
+            117360,
+            117538,
+            104079,
+            82116,
+            58218,
+            36789,
+            21624,
+            11871,
+            10441
+          ],
+          "mean_occupied_codes_per_row_group": 14.935474537037036,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0035052999992331024,
+        "quant_seconds": 1.484021100000973
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 49.51674968232951,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 5,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.018387824296951294,
+          "fp_output_power": 4.06850528717041,
+          "normalized_output_mse": 0.004519552759323013,
+          "diagonal_only_mse": 0.018088317579693265,
+          "net_cross_channel_mse": 0.00029950671725802874
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0011490890756249428,
+        "calibration": {
+          "output_mse": 0.0015598988393321633,
+          "fp_output_power": 4.06850528717041,
+          "normalized_output_mse": 0.0003834083353046474,
+          "diagonal_only_mse": 0.041018048922220864,
+          "net_cross_channel_mse": -0.0394581500828887
+        },
+        "development": {
+          "output_mse": 0.028706183657050133,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.007129864326755003,
+          "diagonal_only_mse": 0.04419375128216214,
+          "net_cross_channel_mse": -0.015487567625112005
+        },
+        "codes": {
+          "code_histogram": [
+            10339,
+            11901,
+            21500,
+            36796,
+            57942,
+            82067,
+            104443,
+            117710,
+            117482,
+            104009,
+            82305,
+            57713,
+            36807,
+            21449,
+            11929,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.931712962962964,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004806000000826316,
+        "quant_seconds": 1.5082306000003882
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 55.780238232394595,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 6,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.01729140244424343,
+          "fp_output_power": 3.8201441764831543,
+          "normalized_output_mse": 0.004526374305632096,
+          "diagonal_only_mse": 0.017304211854934692,
+          "net_cross_channel_mse": -1.2809410691261292e-05
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0010706828907132149,
+        "calibration": {
+          "output_mse": 0.0013976694317534566,
+          "fp_output_power": 3.8201441764831543,
+          "normalized_output_mse": 0.0003658682414023857,
+          "diagonal_only_mse": 0.03624458776579963,
+          "net_cross_channel_mse": -0.03484691833404617
+        },
+        "development": {
+          "output_mse": 0.026678049936890602,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.006626129018919928,
+          "diagonal_only_mse": 0.04094291395611233,
+          "net_cross_channel_mse": -0.01426486401922173
+        },
+        "codes": {
+          "code_histogram": [
+            10436,
+            11785,
+            21481,
+            36892,
+            58053,
+            81804,
+            104790,
+            117401,
+            117506,
+            104132,
+            82121,
+            57786,
+            36797,
+            21544,
+            11838,
+            10370
+          ],
+          "mean_occupied_codes_per_row_group": 14.933304398148149,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004076199998962693,
+        "quant_seconds": 1.4863842999984627
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 44.77413732158928,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "subset": 7,
+      "RTN": {
+        "weight_mse": 0.0004167155420873314,
+        "development": {
+          "output_mse": 0.01842735894024372,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.004576873426087972,
+          "diagonal_only_mse": 0.01825761960612403,
+          "net_cross_channel_mse": 0.00016973933411969233
+        },
+        "codes": {
+          "code_histogram": [
+            10482,
+            11474,
+            21322,
+            36705,
+            57641,
+            82072,
+            104601,
+            118333,
+            118216,
+            104278,
+            82216,
+            57600,
+            36633,
+            21233,
+            11586,
+            10344
+          ],
+          "mean_occupied_codes_per_row_group": 14.953993055555555,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.061250100003235275,
+        "calibration": {
+          "output_mse": 0.018508430570364,
+          "fp_output_power": 4.049609184265137,
+          "normalized_output_mse": 0.004570423892329905,
+          "diagonal_only_mse": 0.01841017272737291,
+          "net_cross_channel_mse": 9.825784299108756e-05
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0011742294300347567,
+        "calibration": {
+          "output_mse": 0.0014784386148676276,
+          "fp_output_power": 4.049609184265137,
+          "normalized_output_mse": 0.00036508180113086955,
+          "diagonal_only_mse": 0.04130699237187704,
+          "net_cross_channel_mse": -0.03982855375700941
+        },
+        "development": {
+          "output_mse": 0.029315898194909096,
+          "fp_output_power": 4.02618932723999,
+          "normalized_output_mse": 0.007281301452111682,
+          "diagonal_only_mse": 0.045194125837749906,
+          "net_cross_channel_mse": -0.01587822764284081
+        },
+        "codes": {
+          "code_histogram": [
+            10461,
+            11832,
+            21439,
+            36992,
+            57872,
+            82255,
+            104256,
+            117513,
+            117458,
+            104191,
+            81910,
+            58140,
+            36702,
+            21426,
+            11984,
+            10305
+          ],
+          "mean_occupied_codes_per_row_group": 14.926649305555555,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0018530999986978713,
+        "quant_seconds": 1.511015399999451
+      },
+      "peak_allocated_MiB": 69.2080078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 59.088984427853994,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 0,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.019563402980566025,
+          "fp_output_power": 1.6655488014221191,
+          "normalized_output_mse": 0.01174592000178075,
+          "diagonal_only_mse": 0.019704735941357084,
+          "net_cross_channel_mse": -0.00014133296079105878
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0008975920500233769,
+        "calibration": {
+          "output_mse": 0.001081724651157856,
+          "fp_output_power": 1.6655488014221191,
+          "normalized_output_mse": 0.0006494704029291917,
+          "diagonal_only_mse": 0.037573420339160495,
+          "net_cross_channel_mse": -0.03649169568800264
+        },
+        "development": {
+          "output_mse": 0.03484518080949783,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.017964978647491733,
+          "diagonal_only_mse": 0.044111149178610906,
+          "net_cross_channel_mse": -0.009265968369113073
+        },
+        "codes": {
+          "code_histogram": [
+            10000,
+            10837,
+            19690,
+            35182,
+            57020,
+            82621,
+            106566,
+            121320,
+            122070,
+            105978,
+            82205,
+            56377,
+            34652,
+            19697,
+            10564,
+            9957
+          ],
+          "mean_occupied_codes_per_row_group": 14.544994212962964,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.003971999998611864,
+        "quant_seconds": 1.4997335999978532
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 56.69834049743614,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 1,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.020346306264400482,
+          "fp_output_power": 1.8104653358459473,
+          "normalized_output_mse": 0.01123816394689136,
+          "diagonal_only_mse": 0.020502698090341356,
+          "net_cross_channel_mse": -0.0001563918259408735
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0009175209561362863,
+        "calibration": {
+          "output_mse": 0.0013884369982406497,
+          "fp_output_power": 1.8104653358459473,
+          "normalized_output_mse": 0.0007668951019114082,
+          "diagonal_only_mse": 0.04068128267923991,
+          "net_cross_channel_mse": -0.03929284568099926
+        },
+        "development": {
+          "output_mse": 0.0347660556435585,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.017924184429078845,
+          "diagonal_only_mse": 0.0443854033946991,
+          "net_cross_channel_mse": -0.009619347751140594
+        },
+        "codes": {
+          "code_histogram": [
+            9945,
+            10677,
+            19692,
+            35057,
+            57248,
+            82865,
+            106442,
+            121536,
+            122180,
+            105884,
+            82151,
+            56329,
+            34541,
+            19662,
+            10648,
+            9879
+          ],
+          "mean_occupied_codes_per_row_group": 14.546730324074074,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004323299999668961,
+        "quant_seconds": 1.504076699999132
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 56.34251561989962,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 2,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.023046571761369705,
+          "fp_output_power": 2.0222725868225098,
+          "normalized_output_mse": 0.011396372532340741,
+          "diagonal_only_mse": 0.02277044455210368,
+          "net_cross_channel_mse": 0.00027612720926602566
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0009090215899050236,
+        "calibration": {
+          "output_mse": 0.001231512287631631,
+          "fp_output_power": 2.0222725868225098,
+          "normalized_output_mse": 0.0006089744259287227,
+          "diagonal_only_mse": 0.04362394743495517,
+          "net_cross_channel_mse": -0.04239243514732354
+        },
+        "development": {
+          "output_mse": 0.03507278859615326,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.018082325406276613,
+          "diagonal_only_mse": 0.044442183441585965,
+          "net_cross_channel_mse": -0.009369394845432706
+        },
+        "codes": {
+          "code_histogram": [
+            10097,
+            10918,
+            19721,
+            35438,
+            57418,
+            82675,
+            106211,
+            121702,
+            121782,
+            106399,
+            81758,
+            56158,
+            34429,
+            19623,
+            10562,
+            9845
+          ],
+          "mean_occupied_codes_per_row_group": 14.541956018518519,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.005252300001302501,
+        "quant_seconds": 1.5441688999999315
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 57.72188985561535,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 3,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.020037943497300148,
+          "fp_output_power": 1.7608330249786377,
+          "normalized_output_mse": 0.011379808995542463,
+          "diagonal_only_mse": 0.02006021473142836,
+          "net_cross_channel_mse": -2.2271234128210665e-05
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0008965115994215012,
+        "calibration": {
+          "output_mse": 0.0009833772201091051,
+          "fp_output_power": 1.7608330249786377,
+          "normalized_output_mse": 0.0005584727263512311,
+          "diagonal_only_mse": 0.03811479939354791,
+          "net_cross_channel_mse": -0.0371314221734388
+        },
+        "development": {
+          "output_mse": 0.035953495651483536,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.01853638772066676,
+          "diagonal_only_mse": 0.04400973849826389,
+          "net_cross_channel_mse": -0.008056242846780352
+        },
+        "codes": {
+          "code_histogram": [
+            9993,
+            10883,
+            19621,
+            35268,
+            57081,
+            83110,
+            105977,
+            121618,
+            121937,
+            106110,
+            81983,
+            56369,
+            34758,
+            19609,
+            10536,
+            9883
+          ],
+          "mean_occupied_codes_per_row_group": 14.537181712962964,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0018196999990323093,
+        "quant_seconds": 1.5303313000003982
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 61.68241842308433,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 4,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.02217881567776203,
+          "fp_output_power": 1.8574528694152832,
+          "normalized_output_mse": 0.011940445996211904,
+          "diagonal_only_mse": 0.02195547189977434,
+          "net_cross_channel_mse": 0.00022334377798769248
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0009009673958644271,
+        "calibration": {
+          "output_mse": 0.0011151352664455771,
+          "fp_output_power": 1.8574528694152832,
+          "normalized_output_mse": 0.0006003572337189994,
+          "diagonal_only_mse": 0.04202550318506029,
+          "net_cross_channel_mse": -0.040910367918614715
+        },
+        "development": {
+          "output_mse": 0.03364870324730873,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.01734811590327342,
+          "diagonal_only_mse": 0.04406574699613783,
+          "net_cross_channel_mse": -0.010417043748829097
+        },
+        "codes": {
+          "code_histogram": [
+            10035,
+            10817,
+            19567,
+            35509,
+            57467,
+            82494,
+            106918,
+            121451,
+            121603,
+            105925,
+            81962,
+            56330,
+            34493,
+            19763,
+            10564,
+            9838
+          ],
+          "mean_occupied_codes_per_row_group": 14.543113425925926,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0022916999987501185,
+        "quant_seconds": 1.5148928000016895
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 51.317795926223965,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 5,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.024249400943517685,
+          "fp_output_power": 2.0745112895965576,
+          "normalized_output_mse": 0.011689211365166206,
+          "diagonal_only_mse": 0.02417302793926663,
+          "net_cross_channel_mse": 7.637300425105548e-05
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.000950545072555542,
+        "calibration": {
+          "output_mse": 0.001243207254447043,
+          "fp_output_power": 2.0745112895965576,
+          "normalized_output_mse": 0.0005992771698479485,
+          "diagonal_only_mse": 0.04757969578107198,
+          "net_cross_channel_mse": -0.04633648852662494
+        },
+        "development": {
+          "output_mse": 0.036219336092472076,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.01867344592312261,
+          "diagonal_only_mse": 0.04580082164870368,
+          "net_cross_channel_mse": -0.009581485556231603
+        },
+        "codes": {
+          "code_histogram": [
+            10074,
+            10865,
+            19747,
+            35587,
+            57177,
+            82562,
+            106573,
+            121272,
+            121733,
+            106284,
+            81641,
+            56431,
+            34727,
+            19725,
+            10493,
+            9845
+          ],
+          "mean_occupied_codes_per_row_group": 14.542679398148149,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0037308999999368098,
+        "quant_seconds": 1.4945318999998563
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 62.877899547655105,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 6,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.021832942962646484,
+          "fp_output_power": 1.829172968864441,
+          "normalized_output_mse": 0.011935964140231351,
+          "diagonal_only_mse": 0.021526667806837294,
+          "net_cross_channel_mse": 0.00030627515580919015
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0009010475478135049,
+        "calibration": {
+          "output_mse": 0.0012724925763905048,
+          "fp_output_power": 1.829172968864441,
+          "normalized_output_mse": 0.0006956655264703994,
+          "diagonal_only_mse": 0.041302147838804454,
+          "net_cross_channel_mse": -0.04002965526241395
+        },
+        "development": {
+          "output_mse": 0.03455432504415512,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.017815023402821074,
+          "diagonal_only_mse": 0.04391200343767802,
+          "net_cross_channel_mse": -0.009357678393522896
+        },
+        "codes": {
+          "code_histogram": [
+            10060,
+            10792,
+            19819,
+            35342,
+            57274,
+            82602,
+            106266,
+            121476,
+            121792,
+            106013,
+            82073,
+            56483,
+            34550,
+            19739,
+            10616,
+            9839
+          ],
+          "mean_occupied_codes_per_row_group": 14.54224537037037,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0016780000005383044,
+        "quant_seconds": 1.5077732000027027
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 55.39036577339935,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "subset": 7,
+      "RTN": {
+        "weight_mse": 0.00041421089554205537,
+        "development": {
+          "output_mse": 0.022237109020352364,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.011464689792158759,
+          "diagonal_only_mse": 0.022111968861685857,
+          "net_cross_channel_mse": 0.0001251401586665063
+        },
+        "codes": {
+          "code_histogram": [
+            10218,
+            10447,
+            19635,
+            35259,
+            57322,
+            82879,
+            106522,
+            122127,
+            122159,
+            106152,
+            81736,
+            56318,
+            34338,
+            19361,
+            10320,
+            9943
+          ],
+          "mean_occupied_codes_per_row_group": 14.558738425925926,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007051499997032806,
+        "calibration": {
+          "output_mse": 0.02322758175432682,
+          "fp_output_power": 2.027592897415161,
+          "normalized_output_mse": 0.011455742315894905,
+          "diagonal_only_mse": 0.02296240462197198,
+          "net_cross_channel_mse": 0.00026517713235484075
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0009160118643194437,
+        "calibration": {
+          "output_mse": 0.0011588128982111812,
+          "fp_output_power": 2.027592897415161,
+          "normalized_output_mse": 0.0005715214822898975,
+          "diagonal_only_mse": 0.04457826084560818,
+          "net_cross_channel_mse": -0.043419447947397
+        },
+        "development": {
+          "output_mse": 0.03365949168801308,
+          "fp_output_power": 1.9396171569824219,
+          "normalized_output_mse": 0.017353678052827268,
+          "diagonal_only_mse": 0.044283651643329196,
+          "net_cross_channel_mse": -0.010624159955316119
+        },
+        "codes": {
+          "code_histogram": [
+            10093,
+            10654,
+            19722,
+            35366,
+            57434,
+            82710,
+            106285,
+            121584,
+            121951,
+            105976,
+            82021,
+            56344,
+            34445,
+            19683,
+            10561,
+            9907
+          ],
+          "mean_occupied_codes_per_row_group": 14.524450231481481,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0016977000013866927,
+        "quant_seconds": 1.5073829000029946
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": 51.36631140858488,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 0,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 6.945745468139648,
+          "fp_output_power": 798.98095703125,
+          "normalized_output_mse": 0.00869325533608179,
+          "diagonal_only_mse": 7.181441413031684,
+          "net_cross_channel_mse": -0.2356959448920355
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0011211080709472299,
+        "calibration": {
+          "output_mse": 0.35295939445495605,
+          "fp_output_power": 798.98095703125,
+          "normalized_output_mse": 0.00044176196109408777,
+          "diagonal_only_mse": 12.795177883572048,
+          "net_cross_channel_mse": -12.442218489117092
+        },
+        "development": {
+          "output_mse": 4.5573320388793945,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.005586429893295147,
+          "diagonal_only_mse": 13.31670888264974,
+          "net_cross_channel_mse": -8.759376843770346
+        },
+        "codes": {
+          "code_histogram": [
+            10347,
+            11294,
+            20826,
+            35883,
+            56230,
+            81466,
+            106322,
+            121140,
+            121329,
+            104498,
+            80494,
+            56310,
+            35686,
+            20951,
+            11553,
+            10407
+          ],
+          "mean_occupied_codes_per_row_group": 14.89626736111111,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004794899999978952,
+        "quant_seconds": 1.5143136000006052
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -35.12388203557244,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 1,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 7.347670078277588,
+          "fp_output_power": 876.7277221679688,
+          "normalized_output_mse": 0.008380789032321574,
+          "diagonal_only_mse": 7.806245591905382,
+          "net_cross_channel_mse": -0.45857551362779425
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0010768008651211858,
+        "calibration": {
+          "output_mse": 0.4051045775413513,
+          "fp_output_power": 876.7277221679688,
+          "normalized_output_mse": 0.00046206429578799033,
+          "diagonal_only_mse": 13.112262301974827,
+          "net_cross_channel_mse": -12.707157724433475
+        },
+        "development": {
+          "output_mse": 4.57127046585083,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.005603515776973239,
+          "diagonal_only_mse": 13.138988918728298,
+          "net_cross_channel_mse": -8.567718452877468
+        },
+        "codes": {
+          "code_histogram": [
+            10266,
+            11367,
+            20894,
+            35782,
+            56481,
+            81279,
+            105954,
+            121146,
+            120968,
+            104656,
+            80928,
+            56477,
+            35824,
+            20899,
+            11530,
+            10285
+          ],
+          "mean_occupied_codes_per_row_group": 14.887297453703704,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.003735199999937322,
+        "quant_seconds": 1.5025322000001324
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -34.925460892517044,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 2,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 6.978389263153076,
+          "fp_output_power": 807.3474731445312,
+          "normalized_output_mse": 0.008643600798021952,
+          "diagonal_only_mse": 7.249813503689236,
+          "net_cross_channel_mse": -0.27142424053615954
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0011196591658517718,
+        "calibration": {
+          "output_mse": 0.4078676402568817,
+          "fp_output_power": 807.3474731445312,
+          "normalized_output_mse": 0.0005051946699830263,
+          "diagonal_only_mse": 12.611579047309029,
+          "net_cross_channel_mse": -12.203711407052147
+        },
+        "development": {
+          "output_mse": 4.515541076660156,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.005535202052396258,
+          "diagonal_only_mse": 13.228598700629341,
+          "net_cross_channel_mse": -8.713057623969185
+        },
+        "codes": {
+          "code_histogram": [
+            10190,
+            11437,
+            20648,
+            35880,
+            56504,
+            80997,
+            106105,
+            121443,
+            120853,
+            104434,
+            81011,
+            56548,
+            35776,
+            20938,
+            11603,
+            10369
+          ],
+          "mean_occupied_codes_per_row_group": 14.891782407407407,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.004624400000466267,
+        "quant_seconds": 1.4889689999981783
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -35.718799274793156,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 3,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 8.060383796691895,
+          "fp_output_power": 980.216064453125,
+          "normalized_output_mse": 0.008223068452962853,
+          "diagonal_only_mse": 8.764734903971354,
+          "net_cross_channel_mse": -0.704351107279459
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0009591254638507962,
+        "calibration": {
+          "output_mse": 0.35208040475845337,
+          "fp_output_power": 980.216064453125,
+          "normalized_output_mse": 0.000359186527875243,
+          "diagonal_only_mse": 14.332290649414062,
+          "net_cross_channel_mse": -13.98021024465561
+        },
+        "development": {
+          "output_mse": 4.8042402267456055,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.005889092782421457,
+          "diagonal_only_mse": 12.890019734700521,
+          "net_cross_channel_mse": -8.085779507954916
+        },
+        "codes": {
+          "code_histogram": [
+            10320,
+            11364,
+            20719,
+            35981,
+            56940,
+            81536,
+            106097,
+            121080,
+            121323,
+            104658,
+            80225,
+            56288,
+            35616,
+            20799,
+            11489,
+            10301
+          ],
+          "mean_occupied_codes_per_row_group": 14.88888888888889,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0038698999996995553,
+        "quant_seconds": 1.5214890000024752
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -31.609008731249823,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 4,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 7.1890869140625,
+          "fp_output_power": 883.9147338867188,
+          "normalized_output_mse": 0.008133235750524149,
+          "diagonal_only_mse": 7.642345852322048,
+          "net_cross_channel_mse": -0.4532589382595482
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.001078317523933947,
+        "calibration": {
+          "output_mse": 0.48824015259742737,
+          "fp_output_power": 883.9147338867188,
+          "normalized_output_mse": 0.0005523611428565683,
+          "diagonal_only_mse": 12.871277703179253,
+          "net_cross_channel_mse": -12.383037550581825
+        },
+        "development": {
+          "output_mse": 3.722264289855957,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.004562794266952171,
+          "diagonal_only_mse": 12.359497918023003,
+          "net_cross_channel_mse": -8.637233628167046
+        },
+        "codes": {
+          "code_histogram": [
+            10307,
+            11470,
+            20791,
+            35878,
+            56456,
+            81715,
+            105908,
+            121331,
+            120555,
+            104732,
+            80627,
+            56488,
+            35771,
+            20841,
+            11510,
+            10356
+          ],
+          "mean_occupied_codes_per_row_group": 14.891927083333334,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0039940000024216715,
+        "quant_seconds": 1.5183514000018477
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -47.011528871868116,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 5,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 7.2695465087890625,
+          "fp_output_power": 864.9475708007812,
+          "normalized_output_mse": 0.008404609428590925,
+          "diagonal_only_mse": 7.591688368055555,
+          "net_cross_channel_mse": -0.32214185926649286
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.0010511854197829962,
+        "calibration": {
+          "output_mse": 0.44490304589271545,
+          "fp_output_power": 864.9475708007812,
+          "normalized_output_mse": 0.0005143699582632709,
+          "diagonal_only_mse": 12.870837741427952,
+          "net_cross_channel_mse": -12.425934695535236
+        },
+        "development": {
+          "output_mse": 3.83227801322937,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.004697650351100267,
+          "diagonal_only_mse": 12.595604790581596,
+          "net_cross_channel_mse": -8.763326777352226
+        },
+        "codes": {
+          "code_histogram": [
+            10255,
+            11447,
+            20866,
+            35731,
+            56771,
+            81901,
+            105698,
+            121465,
+            121163,
+            104677,
+            80188,
+            56419,
+            35738,
+            20830,
+            11481,
+            10106
+          ],
+          "mean_occupied_codes_per_row_group": 14.88035300925926,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.0041001999998115934,
+        "quant_seconds": 1.4804578000002948
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -45.445423256918346,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 6,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 7.2026519775390625,
+          "fp_output_power": 844.6516723632812,
+          "normalized_output_mse": 0.008527363661503804,
+          "diagonal_only_mse": 7.692574395073785,
+          "net_cross_channel_mse": -0.4899224175347223
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.001068290788680315,
+        "calibration": {
+          "output_mse": 0.3866442143917084,
+          "fp_output_power": 844.6516723632812,
+          "normalized_output_mse": 0.0004577558146660654,
+          "diagonal_only_mse": 12.927410549587673,
+          "net_cross_channel_mse": -12.540766335195965
+        },
+        "development": {
+          "output_mse": 3.9544339179992676,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.004847390460494813,
+          "diagonal_only_mse": 12.559025234646267,
+          "net_cross_channel_mse": -8.604591316647
+        },
+        "codes": {
+          "code_histogram": [
+            10353,
+            11392,
+            20644,
+            35927,
+            56529,
+            81701,
+            105825,
+            121520,
+            120873,
+            104866,
+            80386,
+            56387,
+            35769,
+            20709,
+            11515,
+            10340
+          ],
+          "mean_occupied_codes_per_row_group": 14.8828125,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.003300600001239218,
+        "quant_seconds": 1.516088899999886
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -43.70646703861043,
+      "status": "PASS"
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "subset": 7,
+      "RTN": {
+        "weight_mse": 0.0003840262070298195,
+        "development": {
+          "output_mse": 7.024668216705322,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.008610918884447217,
+          "diagonal_only_mse": 7.313834296332465,
+          "net_cross_channel_mse": -0.2891660796271429
+        },
+        "codes": {
+          "code_histogram": [
+            10379,
+            11037,
+            20647,
+            35616,
+            56548,
+            81706,
+            106627,
+            121935,
+            121685,
+            104708,
+            80318,
+            56059,
+            35399,
+            20589,
+            11259,
+            10224
+          ],
+          "mean_occupied_codes_per_row_group": 14.902199074074074,
+          "row_groups": 6912
+        },
+        "quant_seconds": 0.007737199997791322,
+        "calibration": {
+          "output_mse": 7.460729122161865,
+          "fp_output_power": 860.1685180664062,
+          "normalized_output_mse": 0.008673566824943814,
+          "diagonal_only_mse": 7.767635769314236,
+          "net_cross_channel_mse": -0.3069066471523705
+        }
+      },
+      "GPTQ": {
+        "weight_mse": 0.001031375490128994,
+        "calibration": {
+          "output_mse": 0.45666858553886414,
+          "fp_output_power": 860.1685180664062,
+          "normalized_output_mse": 0.000530905951505201,
+          "diagonal_only_mse": 13.477064344618055,
+          "net_cross_channel_mse": -13.020395759079191
+        },
+        "development": {
+          "output_mse": 3.4984610080718994,
+          "fp_output_power": 815.7861328125,
+          "normalized_output_mse": 0.004288453636752348,
+          "diagonal_only_mse": 12.62227037217882,
+          "net_cross_channel_mse": -9.12380936410692
+        },
+        "codes": {
+          "code_histogram": [
+            10237,
+            11354,
+            20783,
+            35775,
+            56530,
+            81832,
+            105787,
+            121424,
+            121031,
+            104408,
+            80943,
+            56473,
+            35699,
+            20768,
+            11541,
+            10151
+          ],
+          "mean_occupied_codes_per_row_group": 14.88888888888889,
+          "row_groups": 6912
+        },
+        "h_seconds": 0.005170699998416239,
+        "quant_seconds": 1.4879428999993252
+      },
+      "peak_allocated_MiB": 70.0830078125,
+      "peak_reserved_MiB": 88.0,
+      "dev_mse_relative_delta_percent": -50.19749118182935,
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "source_hashes": {
+    "gptq.py": "bb47468cc2c788577562751de414d76eeb9968ff1c6098e21153557ef3d154c7",
+    "quant.py": "211528568b962b868d20fc58b55200b615f41ebd9f36b4d2d7e4a196a095ea5a"
+  },
+  "resources_before": {
+    "free_gpu_MiB": 2916.0,
+    "free_ram_GiB": 5.308986663818359,
+    "process_rss_MiB": 381.85546875
+  },
+  "snapshot_sha256_before": "db6881a9f0948621856a9abc9dd6b9153362e9587144ada78e2bb6fa0719eccf",
+  "wall_seconds": 40.68699999999808,
+  "snapshot_sha256_after": "db6881a9f0948621856a9abc9dd6b9153362e9587144ada78e2bb6fa0719eccf",
+  "status": "COMPLETE"
+}

@@ -1,0 +1,185 @@
+{
+  "sources": [
+    "20261014T151532726121Z",
+    "20261014T152009405310Z"
+  ],
+  "initial_errors_preserved": [
+    "RuntimeError(\"Unexpected state mismatch: _IncompatibleKeys(missing_keys=['lm_head.weight'], unexpected_keys=[])\")"
+  ],
+  "models": [
+    {
+      "repo": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "calibration_tokens": 2048,
+      "expected_targets": 2032,
+      "token_manifest_sha256": "c8abeb557055022128a8026a029d5b7928739e720b3052d9fb6e607cabdc59af",
+      "source_run": "20261014T152009405310Z",
+      "methods": [
+        {
+          "model": "HuggingFaceTB/SmolLM2-135M",
+          "method": "FP",
+          "ppl": 39.6189455563729,
+          "ppl_rise_vs_FP_percent": 0.0,
+          "mean_nll": 3.6793074269933026,
+          "delta_mean_nll_vs_FP": 0.0,
+          "calibration_tokens": 2048,
+          "target_tokens": 2032,
+          "quantization_cycle_seconds": 0,
+          "quant_peak_allocated_MiB": null,
+          "quant_peak_reserved_MiB": null,
+          "quantized_linear_count": 0,
+          "evaluation_seconds": 2.1935850999980175,
+          "source_run": "20261014T152009405310Z"
+        },
+        {
+          "model": "HuggingFaceTB/SmolLM2-135M",
+          "method": "RTN",
+          "ppl": 56.962272990080045,
+          "ppl_rise_vs_FP_percent": 43.77533826343188,
+          "mean_nll": 4.042389171330009,
+          "delta_mean_nll_vs_FP": 0.36308174433670626,
+          "calibration_tokens": 2048,
+          "target_tokens": 2032,
+          "quantization_cycle_seconds": 0.9256750999993528,
+          "quant_peak_allocated_MiB": 653.14404296875,
+          "quant_peak_reserved_MiB": 750.0,
+          "quantized_linear_count": 210,
+          "evaluation_seconds": 2.0440730000009353,
+          "source_run": "20261014T152009405310Z"
+        },
+        {
+          "model": "HuggingFaceTB/SmolLM2-135M",
+          "method": "GPTQ",
+          "ppl": 50.07047575260563,
+          "ppl_rise_vs_FP_percent": 26.380132155111212,
+          "mean_nll": 3.913431528046375,
+          "delta_mean_nll_vs_FP": 0.23412410105307258,
+          "calibration_tokens": 2048,
+          "target_tokens": 2032,
+          "quantization_cycle_seconds": 204.09576540000126,
+          "quant_peak_allocated_MiB": 732.72705078125,
+          "quant_peak_reserved_MiB": 772.0,
+          "quantized_linear_count": 210,
+          "evaluation_seconds": 1.9055942000013602,
+          "source_run": "20261014T152009405310Z"
+        }
+      ]
+    },
+    {
+      "repo": "EleutherAI/pythia-160m",
+      "revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+      "calibration_tokens": 1952,
+      "expected_targets": 1977,
+      "token_manifest_sha256": "47ef585f4462d3ee7f6e9be495bf3bba6f6ab843cca78db2387dbdf4637e74c0",
+      "source_run": "20261014T151532726121Z",
+      "methods": [
+        {
+          "model": "EleutherAI/pythia-160m",
+          "method": "FP",
+          "ppl": 58.237352325913605,
+          "ppl_rise_vs_FP_percent": 0.0,
+          "mean_nll": 4.064526941418105,
+          "delta_mean_nll_vs_FP": 0.0,
+          "calibration_tokens": 1952,
+          "target_tokens": 1977,
+          "quantization_cycle_seconds": 0,
+          "quant_peak_allocated_MiB": null,
+          "quant_peak_reserved_MiB": null,
+          "quantized_linear_count": 0,
+          "evaluation_seconds": 2.4268809000022884,
+          "source_run": "20261014T151532726121Z"
+        },
+        {
+          "model": "EleutherAI/pythia-160m",
+          "method": "RTN",
+          "ppl": 80.14113091601659,
+          "ppl_rise_vs_FP_percent": 37.61121980189432,
+          "mean_nll": 4.383789216863065,
+          "delta_mean_nll_vs_FP": 0.31926227544496033,
+          "calibration_tokens": 1952,
+          "target_tokens": 1977,
+          "quantization_cycle_seconds": 0.53266590000203,
+          "quant_peak_allocated_MiB": 698.900390625,
+          "quant_peak_reserved_MiB": 846.0,
+          "quantized_linear_count": 48,
+          "evaluation_seconds": 1.651928899998893,
+          "source_run": "20261014T151532726121Z"
+        },
+        {
+          "model": "EleutherAI/pythia-160m",
+          "method": "GPTQ",
+          "ppl": 71.4771330859521,
+          "ppl_rise_vs_FP_percent": 22.734173569472627,
+          "mean_nll": 4.269377581567914,
+          "delta_mean_nll_vs_FP": 0.20485064014980914,
+          "calibration_tokens": 1952,
+          "target_tokens": 1977,
+          "quantization_cycle_seconds": 84.9645273999995,
+          "quant_peak_allocated_MiB": 818.806640625,
+          "quant_peak_reserved_MiB": 918.0,
+          "quantized_linear_count": 48,
+          "evaluation_seconds": 1.641520400000445,
+          "source_run": "20261014T151532726121Z"
+        }
+      ]
+    },
+    {
+      "repo": "facebook/opt-125m",
+      "revision": "27dcfa74d334bc871f3234de431e71c6eeba5dd6",
+      "calibration_tokens": 1926,
+      "expected_targets": 1947,
+      "token_manifest_sha256": "ca73c1bdf4bbe2d989546d127bcfe129376e97b503809f562ab2bd182bc9e011",
+      "source_run": "20261014T151532726121Z",
+      "methods": [
+        {
+          "model": "facebook/opt-125m",
+          "method": "FP",
+          "ppl": 62.96040024335371,
+          "ppl_rise_vs_FP_percent": 0.0,
+          "mean_nll": 4.142505961194305,
+          "delta_mean_nll_vs_FP": 0.0,
+          "calibration_tokens": 1926,
+          "target_tokens": 1947,
+          "quantization_cycle_seconds": 0,
+          "quant_peak_allocated_MiB": null,
+          "quant_peak_reserved_MiB": null,
+          "quantized_linear_count": 0,
+          "evaluation_seconds": 1.3050395999998727,
+          "source_run": "20261014T151532726121Z"
+        },
+        {
+          "model": "facebook/opt-125m",
+          "method": "RTN",
+          "ppl": 69.00394961460202,
+          "ppl_rise_vs_FP_percent": 9.598969110566102,
+          "mean_nll": 4.234163743750401,
+          "delta_mean_nll_vs_FP": 0.09165778255609602,
+          "calibration_tokens": 1926,
+          "target_tokens": 1947,
+          "quantization_cycle_seconds": 0.6335586999994121,
+          "quant_peak_allocated_MiB": 501.76953125,
+          "quant_peak_reserved_MiB": 656.0,
+          "quantized_linear_count": 72,
+          "evaluation_seconds": 1.3087084999970102,
+          "source_run": "20261014T151532726121Z"
+        },
+        {
+          "model": "facebook/opt-125m",
+          "method": "GPTQ",
+          "ppl": 66.12239259948862,
+          "ppl_rise_vs_FP_percent": 5.02219227310059,
+          "mean_nll": 4.19150745801333,
+          "delta_mean_nll_vs_FP": 0.04900149681902466,
+          "calibration_tokens": 1926,
+          "target_tokens": 1947,
+          "quantization_cycle_seconds": 101.28776230000221,
+          "quant_peak_allocated_MiB": 621.6767578125,
+          "quant_peak_reserved_MiB": 728.0,
+          "quantized_linear_count": 72,
+          "evaluation_seconds": 1.295720000001893,
+          "source_run": "20261014T151532726121Z"
+        }
+      ]
+    }
+  ]
+}

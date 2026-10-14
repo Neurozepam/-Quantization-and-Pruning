@@ -1,0 +1,28 @@
+{
+  "run_id": "20261014T150623521707Z",
+  "wall_seconds": 65.76499999999942,
+  "capture_seconds": 16.41333780000059,
+  "sites": [
+    {
+      "site": "model.layers.0.mlp.down_proj",
+      "dev_delta_vs_RTN_percent_mean": 1.6679342993454138,
+      "dev_delta_vs_256_GPTQ_percent_mean": -33.83585050319934,
+      "wins_vs_RTN": 2,
+      "wins_vs_256_GPTQ": 8
+    },
+    {
+      "site": "model.layers.15.mlp.down_proj",
+      "dev_delta_vs_RTN_percent_mean": 6.968897865109369,
+      "dev_delta_vs_256_GPTQ_percent_mean": -31.67697059655396,
+      "wins_vs_RTN": 0,
+      "wins_vs_256_GPTQ": 8
+    },
+    {
+      "site": "model.layers.29.mlp.down_proj",
+      "dev_delta_vs_RTN_percent_mean": -67.22630222911707,
+      "dev_delta_vs_256_GPTQ_percent_mean": -44.26224900712442,
+      "wins_vs_RTN": 8,
+      "wins_vs_256_GPTQ": 8
+    }
+  ]
+}
