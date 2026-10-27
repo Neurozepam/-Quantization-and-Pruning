@@ -247,3 +247,5 @@ dataset/
 *.pt
 *.ckpt
 *.safetensors
+
+.idea
