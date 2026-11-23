@@ -1,0 +1,326 @@
+{
+  "checkpoint_sha256": "5a62bdc523480c70a458b924be9af254c75628312d46f145df66f648974ee75a",
+  "torch": "2.5.1+cu121",
+  "torch_pruning": "1.6.1",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+  "threads": 1,
+  "backend": "onednn",
+  "train_device": "NVIDIA GeForce GTX 1050 Ti",
+  "seed": 42,
+  "calibration_examples": 512,
+  "n_test": 10000,
+  "steps": 5,
+  "epochs_per_step": 2,
+  "batch_train": 64,
+  "learning_rate": 0.0001,
+  "rows": [
+    {
+      "method": "FP32",
+      "ratio": 0.0,
+      "ft_epochs": 0,
+      "parameters": 44470,
+      "compression_stage_s": 0.0,
+      "correct": 9855,
+      "accuracy_pct": 98.55,
+      "fp_correct_ptq_wrong": 0,
+      "fp_wrong_ptq_correct": 0,
+      "state_dict_bytes": 183530,
+      "cpu_ms_batch_1": {
+        "median": 0.28404460000092513,
+        "rounds": [
+          0.28404460000092513,
+          0.34297719999813125,
+          0.28378560000055586
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.6395000002085,
+        "rounds": [
+          8.6395000002085,
+          8.600509999814676,
+          8.762399999977788
+        ]
+      }
+    },
+    {
+      "method": "PTQ INT8 per-tensor MinMax",
+      "ratio": 0.0,
+      "ft_epochs": 0,
+      "parameters": null,
+      "compression_stage_s": 0.12172610000197892,
+      "correct": 9849,
+      "accuracy_pct": 98.49,
+      "fp_correct_ptq_wrong": 9,
+      "fp_wrong_ptq_correct": 3,
+      "state_dict_bytes": 52000,
+      "cpu_ms_batch_1": {
+        "median": 0.5967409999720985,
+        "rounds": [
+          0.6002614999852085,
+          0.5967409999720985,
+          0.5882100000235368
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 4.1191100001015,
+        "rounds": [
+          4.128070000115258,
+          4.107570000269334,
+          4.1191100001015
+        ]
+      }
+    },
+    {
+      "method": "PTQ INT8 per-channel MinMax",
+      "ratio": 0.0,
+      "ft_epochs": 0,
+      "parameters": null,
+      "compression_stage_s": 0.06431529999827035,
+      "correct": 9852,
+      "accuracy_pct": 98.52,
+      "fp_correct_ptq_wrong": 4,
+      "fp_wrong_ptq_correct": 1,
+      "state_dict_bytes": 57774,
+      "cpu_ms_batch_1": {
+        "median": 0.5850849999987986,
+        "rounds": [
+          0.6165895000049203,
+          0.5746970000109286,
+          0.5850849999987986
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 4.211485000087122,
+        "rounds": [
+          4.25990500007174,
+          4.089979999844218,
+          4.211485000087122
+        ]
+      }
+    },
+    {
+      "method": "PTQ INT8 per-channel Histogram",
+      "ratio": 0.0,
+      "ft_epochs": 0,
+      "parameters": null,
+      "compression_stage_s": 0.16299000000071828,
+      "correct": 9852,
+      "accuracy_pct": 98.52,
+      "fp_correct_ptq_wrong": 4,
+      "fp_wrong_ptq_correct": 1,
+      "state_dict_bytes": 57774,
+      "cpu_ms_batch_1": {
+        "median": 0.5956430000151158,
+        "rounds": [
+          0.5872760000056587,
+          0.5956430000151158,
+          0.6017580000116141
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 4.1053550001379335,
+        "rounds": [
+          4.144600000108767,
+          4.096600000048056,
+          4.1053550001379335
+        ]
+      }
+    },
+    {
+      "method": "LAMP one-shot",
+      "ratio": 0.5,
+      "ft_epochs": 0,
+      "parameters": 16767,
+      "compression_stage_s": 0.026093199998285854,
+      "correct": 8744,
+      "accuracy_pct": 87.44,
+      "fp_correct_ptq_wrong": 1143,
+      "fp_wrong_ptq_correct": 32,
+      "state_dict_bytes": 72682,
+      "cpu_ms_batch_1": {
+        "median": 0.2811251000021002,
+        "rounds": [
+          0.2800683999994362,
+          0.2811251000021002,
+          0.2871677000002819
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.523849999983213,
+        "rounds": [
+          8.523849999983213,
+          8.47317000007024,
+          8.868520000032731
+        ]
+      }
+    },
+    {
+      "method": "LAMP one-shot",
+      "ratio": 0.55,
+      "ft_epochs": 0,
+      "parameters": 14649,
+      "compression_stage_s": 0.0075980000001436565,
+      "correct": 8021,
+      "accuracy_pct": 80.21,
+      "fp_correct_ptq_wrong": 1866,
+      "fp_wrong_ptq_correct": 32,
+      "state_dict_bytes": 64234,
+      "cpu_ms_batch_1": {
+        "median": 0.28537019999930635,
+        "rounds": [
+          0.2916963999996369,
+          0.2768220999969344,
+          0.28537019999930635
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.68268000012904,
+        "rounds": [
+          8.40267000021413,
+          8.68268000012904,
+          9.01518999999098
+        ]
+      }
+    },
+    {
+      "method": "LAMP one-shot",
+      "ratio": 0.6,
+      "ft_epochs": 0,
+      "parameters": 12647,
+      "compression_stage_s": 0.006417600001441315,
+      "correct": 7775,
+      "accuracy_pct": 77.75,
+      "fp_correct_ptq_wrong": 2122,
+      "fp_wrong_ptq_correct": 42,
+      "state_dict_bytes": 56298,
+      "cpu_ms_batch_1": {
+        "median": 0.3069543999990856,
+        "rounds": [
+          0.2958768999997119,
+          0.3203603999972984,
+          0.3069543999990856
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.493110000199522,
+        "rounds": [
+          8.528690000093775,
+          8.493110000199522,
+          8.46640000017942
+        ]
+      }
+    },
+    {
+      "method": "LAMP one-shot",
+      "ratio": 0.65,
+      "ft_epochs": 0,
+      "parameters": 10953,
+      "compression_stage_s": 0.007782600001519313,
+      "correct": 7069,
+      "accuracy_pct": 70.69,
+      "fp_correct_ptq_wrong": 2834,
+      "fp_wrong_ptq_correct": 48,
+      "state_dict_bytes": 49450,
+      "cpu_ms_batch_1": {
+        "median": 0.32278930000029504,
+        "rounds": [
+          0.32278930000029504,
+          0.3712497999986226,
+          0.3117433000006713
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.684830000129296,
+        "rounds": [
+          9.092840000084834,
+          8.684830000129296,
+          8.335470000019995
+        ]
+      }
+    },
+    {
+      "method": "LAMP iterative",
+      "ratio": 0.6,
+      "ft_epochs": 0,
+      "parameters": 12894,
+      "compression_stage_s": 0.01827009999760776,
+      "correct": 7617,
+      "accuracy_pct": 76.17,
+      "fp_correct_ptq_wrong": 2266,
+      "fp_wrong_ptq_correct": 28,
+      "state_dict_bytes": 57322,
+      "cpu_ms_batch_1": {
+        "median": 0.2818493999984639,
+        "rounds": [
+          0.2818493999984639,
+          0.28082419999918784,
+          0.28459660000225995
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.612539999739965,
+        "rounds": [
+          8.63162999994529,
+          8.612539999739965,
+          8.611810000002151
+        ]
+      }
+    },
+    {
+      "method": "LAMP iterative + FT",
+      "ratio": 0.6,
+      "ft_epochs": 10,
+      "parameters": 12894,
+      "compression_stage_s": 32.09417690000191,
+      "correct": 9904,
+      "accuracy_pct": 99.04,
+      "fp_correct_ptq_wrong": 27,
+      "fp_wrong_ptq_correct": 76,
+      "state_dict_bytes": 57322,
+      "cpu_ms_batch_1": {
+        "median": 0.2873414999994566,
+        "rounds": [
+          0.2790612999997393,
+          0.30326549999881536,
+          0.2873414999994566
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.58711000000767,
+        "rounds": [
+          8.752340000137337,
+          8.54369000007864,
+          8.58711000000767
+        ]
+      }
+    },
+    {
+      "method": "Dense + FT",
+      "ratio": 0.0,
+      "ft_epochs": 10,
+      "parameters": 44470,
+      "compression_stage_s": 29.577216800000315,
+      "correct": 9928,
+      "accuracy_pct": 99.28,
+      "fp_correct_ptq_wrong": 13,
+      "fp_wrong_ptq_correct": 86,
+      "state_dict_bytes": 183530,
+      "cpu_ms_batch_1": {
+        "median": 0.2811957000012626,
+        "rounds": [
+          0.2902493000001414,
+          0.2800128999988374,
+          0.2811957000012626
+        ]
+      },
+      "cpu_ms_batch_256": {
+        "median": 8.708069999920554,
+        "rounds": [
+          8.708069999920554,
+          8.676479999849107,
+          9.321640000052867
+        ]
+      }
+    }
+  ]
+}
