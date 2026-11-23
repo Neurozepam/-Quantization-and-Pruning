@@ -1,0 +1,54 @@
+{
+  "torch": "2.5.1+cu121",
+  "cv": {
+    "model": "LeNet + BatchNorm",
+    "dtype": "float32",
+    "dataset": "MNIST",
+    "split": "test",
+    "examples": 10000,
+    "normalization_mean": 0.1307,
+    "normalization_std": 0.3081,
+    "checkpoint": "quantization/research/cnn_ptq/artifacts/fp32/model.pt",
+    "checkpoint_sha256": "5a62bdc523480c70a458b924be9af254c75628312d46f145df66f648974ee75a",
+    "params": 44470,
+    "correct": 9855,
+    "accuracy_pct": 98.55,
+    "state_dict_bytes": 183530,
+    "cpu_threads": 1,
+    "cpu_ms_batch_1": {
+      "median": 0.29033239999989746,
+      "rounds": [
+        0.29033239999989746,
+        0.2786679999990156,
+        0.294969200000196
+      ]
+    },
+    "cpu_ms_batch_256": {
+      "median": 9.449010000025737,
+      "rounds": [
+        8.600790000127745,
+        9.918970000217087,
+        9.449010000025737
+      ]
+    }
+  },
+  "transformers": {
+    "model": "HuggingFaceTB/SmolLM-135M",
+    "revision": "1d461723eec654e65efdc40cf49301c89c0c92f4",
+    "dtype": "float16",
+    "dataset": "Salesforce/wikitext",
+    "dataset_revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_config": "wikitext-2-raw-v1",
+    "split": "test",
+    "nonblank_rows": 2891,
+    "scored_tokens": 304828,
+    "window_tokens": 512,
+    "stride_tokens": 256,
+    "windows": 1190,
+    "params": 134515008,
+    "parameter_payload_bytes": 269030016,
+    "mean_nll": 2.9116408961670244,
+    "perplexity": 18.386944894157526,
+    "gpu": "NVIDIA GeForce GTX 1050 Ti"
+  }
+}
